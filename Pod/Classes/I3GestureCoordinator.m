@@ -295,7 +295,6 @@
         }
     }
     else if(
-        !isRearrange &&
         [self.dragDataSource respondsToSelector:@selector(canItemAt:fromCollection:beDroppedAtPoint:onCollection:)] &&
         [self.dragDataSource respondsToSelector:@selector(dropItemAt:fromCollection:toPoint:onCollection:)] &&
         [self.dragDataSource canItemAt:fromIndex fromCollection:self.currentDraggingCollection beDroppedAtPoint:at onCollection:to]
